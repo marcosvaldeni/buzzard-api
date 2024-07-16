@@ -1,0 +1,11 @@
+version: '3'
+
+secrets:
+  api-solid-pg:
+    image: bitnami/postgresql
+    posts:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=buzzard
